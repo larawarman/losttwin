@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Lost Twin</title>
+	<meta name="description" content="First attempt at processing overwhelming data.">
+	<meta name="author" content="lara warman">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link href='http://fonts.googleapis.com/css?family=Nunito:300|Archivo+Black' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="stylesheets/losttwin.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<!--<script type="text/javascript" src="script/jquery.min.js"></script>-->
+	<script type="text/javascript" src="script/soundmanager2-jsmin.js"></script>
+	<script type="text/javascript" src="script/sc-player.js"></script>
+	<script type="text/javascript" src="script/jquery.transform.js"></script>
+	<script type="text/javascript" src="script/losttwin.js"></script>
+
+</head>
+<body>
+	<!-- thanks for checking out ye olde source code. if you're curious, this site was developed by lara warman - twitter.com/larawarman. -->
+	
+	<div class="astronaut"></div>
+	<div class="svg-bg">
+			<img class="logo" src="images/losttwin-logo.svg" />
+			<img class="moonscape" src="images/losttwin-bg.svg" />
+			<!-- <img class="earth" src="images/losttwin-earth.svg" /> -->
+	</div>
+	<div id="animaniacs">
+		<video autoplay loop poster="images/starsbg-cover.png" id="bgvid">
+			<source src="images/starsbg.webm" type="video/webm">
+			<source src="images/starsbg.mp4" type="video/mp4">
+		</video>
+	</div>
+	
+
+ 	<div class='player'>
+		<div class='position-player'>
+			<div class="controls">
+				<ol class="tracks"></ol>
+				<a class='prev' alt="previous"><span class="daIcon">&#xf049;</span></a>
+				<a class='play' alt="play"><span class="daIcon">&#xf04b;</span></a>
+				<a class='pause' alt="pause"><span class="daIcon">&#xf04c;</span></a>
+				<a class='next' alt="next"><span class="daIcon">&#xf050;</span></a>
+			</div>
+			<div class="title"></div>
+			<div class="isPlaying">
+				<div class="playhead-bg"></div>
+				<div class="playhead"></div>
+			</div>
+		</div>
+		<div class="info">
+			<a href='mailto:lara.warman@gmail.com'>send us a note</a>
+			<p>&copy; all songs martin brothers records</p>
+		</div>
+    </div>
+ 	
+</body>
+</html>

@@ -1,0 +1,359 @@
+/* site-specific styles for Lost Twin
+* larawarman.com
+* @larawarman
+*/
+
+
+/* GLOBAL */
+html, body {
+	/*background: #232049;*/
+	width:100%;
+	height:100%;
+}
+
+video#bgvid {
+	position: fixed; right: 0; bottom: 0;
+	min-width: 100%; min-height: 100%;
+	width: auto; height: auto; z-index: -100;
+	background: url(./images/starsbg-cover.png) no-repeat;
+	background-size: cover;
+}
+
+.daIcon {
+	font-family: 'FontAwesome';
+}
+
+
+
+/* PLAYER */
+.player {
+	background-color:#8f6ead;
+	min-height: 50px;
+	width:100%;
+	position: absolute;
+	bottom:0;
+	z-index: 9999;
+	opacity:0.8;
+}
+
+.tracks {
+	display:block;
+	position:fixed;
+	bottom:8%;
+	right:5%;
+	width: 400px;
+	height: 515px;
+	background: url(../images/flag.svg);
+	background-repeat:no-repeat;
+	background-size: 100%;
+	padding: 70px 0 0 20px;
+}
+
+.tracks li {
+	display: block;
+	width: 175px;
+	height:30px;
+	color: #000;
+	font-weight: bold;
+	cursor:pointer;
+	display:block;
+	background-repeat:no-repeat;
+	background-size: 100%;
+	text-indent: -9999px;
+	float: left;
+}
+
+.tracks li.active {
+	opacity: 0.6;
+}
+
+.tracks li:hover {
+	opacity:0.7;
+}
+
+.tracks li.song1 {
+	background-image: url(../images/tracks/almostDone.svg);
+/*	position: fixed;
+	top:50%;
+	left:10%;*/
+}
+
+.tracks li.song2 {
+	background-image: url(../images/tracks/cardboardForever.svg);
+/*	position: fixed;
+	top:40%;
+	left:25%;*/
+}
+
+.tracks li.song3 {
+	background-image: url(../images/tracks/fearOfOthers.svg);
+/*	position: fixed;
+	top:25%;
+	left:40%;*/
+}
+
+.tracks li.song4 {
+	background-image: url(../images/tracks/fearOfSelf.svg);
+/*	position: fixed;
+	top:35%;
+	left:55%;*/
+}
+
+.tracks li.song5 {
+	background-image: url(../images/tracks/gonnaBeOk.svg);
+/*	position: fixed;
+	top:10%;
+	left:50%;*/
+}
+
+.tracks li.song6 {
+	background-image: url(../images/tracks/nothingBad.svg);
+/*	position: fixed;
+	top:20%;
+	left:67%;*/
+}
+
+.tracks li.song7 {
+	background-image: url(../images/tracks/slowPills.svg);
+/*	position: fixed;
+	top:5%;
+	left:65%;*/
+}
+
+.tracks li.song8 {
+	background-image: url(../images/tracks/underTheSun.svg);
+/*	position: fixed;
+	top:50%;
+	left:62%;*/
+}
+
+.tracks li.song9 {
+	background-image: url(../images/tracks/weNeedToTalk.svg);
+/*	position: fixed;
+	top:10%;
+	left:82%;*/
+}
+
+.tracks li.song10 {
+	background-image: url(../images/tracks/wipeout2.svg);
+/*	position: fixed;
+	top:40%;
+	left:80%;*/
+}
+
+.tracks li.song11 {
+	background-image: url(../images/tracks/badFoundation.svg);
+/*	position: fixed;
+	top:60%;
+	left:85%;*/
+}
+
+.controls{
+	float:left;
+	margin: 15px 0 15px 30px;
+	width:100px;
+}
+
+.controls a, .controls a:visited {
+	float:left;
+	margin: 0 15px 0 0;
+	text-decoration:none;
+	color:#fff;
+	cursor:pointer;
+}
+.controls a:hover {
+	color:#ccc;
+}
+
+.play {
+  display: block; }
+
+.pause {
+  display: none; }
+
+.playing .play {
+  display: none; }
+.playing .pause {
+  display: block; }
+
+
+.isPlaying {
+	margin: 50px 0 10px 30px;
+	width:450px;
+	display:block;
+}
+.playhead-bg{
+	background:#fff;
+	height:10px;
+	opacity:0.5;
+}
+.playhead {
+	background:#fff;
+	height:10px;
+	width:0%;
+	margin:-10px 0 0 0;
+	opacity:1.0;
+}
+
+.player .title {
+	cursor:auto;
+	float:left;
+	margin: 15px 0 15px 30px;
+	color:#fff;
+}
+
+.position-player {
+	float:left;
+	margin-top:18px;
+}
+
+.info {
+	float: right;
+	color: #fff;
+	margin: 10px;
+}
+
+.info a {
+	display:block;
+	width:150px;
+	padding: 10px 15px;
+	border: 2px #bd9dd9 solid;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: rgba(143, 110, 173, 1.0);
+}
+
+.info a:hover {
+	opacity: 0.8;
+}
+
+.info p {
+	clear:both;
+	margin: 10px 0 0 0;
+}
+
+/* SET THE SCENE */
+.svg-bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%;
+  z-index: 1;
+}
+.svg-bg img.moonscape { 
+	display: inline-block;
+	position: absolute; left: 0; bottom:0;
+	margin:auto;
+	z-index: 2;
+}
+
+.svg-bg img.earth {
+	z-index: 0;
+	width:200px;
+	height:200px;
+	float:right;
+	margin:100px 50px;
+	z-index:-400;
+}
+
+.logo {
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width:50%;
+}
+
+.astronaut {
+	display: block;
+	width:300px;
+	height:374px;
+	background-image: url(../images/astronaut.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	z-index: 100;
+	margin: auto;
+	position:absolute;
+	bottom:18%;
+	left:30%;
+}
+
+/* ANIMATIONS */
+#animaniacs {
+	-webkit-perspective:800px;
+  	-moz-perspective:800px;
+  	-ms-perspective:800px;
+  	perspective:800px;
+	background-color:#232049;
+	width:800px;
+	height:600px;
+}
+.junk {
+	perspective-origin: 25% 75%;
+	width:200px;
+	min-height:200px;
+	display:none;
+	position:absolute;
+	top:-120px;
+	left:-120px;
+	z-index:100;
+}
+
+
+/* MOBILE STYLES */
+
+@media only screen and (min-width: 768px) and (max-width: 959px){
+	.tracks {
+		width:340px;
+		padding: 60px 0 0 20px;
+		bottom: 0;
+	}
+	
+	.tracks li {
+		width:150px;
+	}
+
+	.astronaut {
+		width:250px;
+		height: 311px;
+		bottom:10%;
+	}
+}
+
+@media only screen and (max-width: 767px){
+	.logo {
+		width:90%;
+	}
+
+	.astronaut {
+		width:210px;
+		height: 282px;
+		bottom:10%;
+	}
+
+	.tracks {
+		/*width:280px;
+		height:400px;
+		padding: 60px 0 0 20px;
+		bottom: 5%;*/
+		display:none;
+	}
+
+	.tracks li {
+		float:left;
+		width:130px;
+		height:20px;
+	}
+
+	.isPlaying {
+		width:300px;
+	}
+	.info {
+		float: left;
+		margin-left: 30px;
+	}
+
+}
